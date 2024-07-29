@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "pacman1"
+  annotations:
+    gitlab.com/project: https://github.com/marrober/pacman1-gitops.git
+  tags:
+    - rhone
+spec:
+  type: service
+  lifecycle: production

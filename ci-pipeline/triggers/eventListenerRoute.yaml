@@ -1,0 +1,12 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    eventlistener: pacman1-ci-pipeline-listener-interceptor
+  name: pacman1-ci-listener-el
+spec:
+  port:
+    targetPort: http-listener
+  to:
+    kind: Service
+    name: el-pacman1-ci-pipeline-listener-interceptor
